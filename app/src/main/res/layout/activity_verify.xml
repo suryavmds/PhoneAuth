@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#F9FAFF"
+tools:context=".Verify"
+android:orientation="vertical"
+android:weightSum="2">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:gravity="center|bottom"
+    android:layout_weight="1">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_verify"
+        android:paddingBottom="40dp"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    android:gravity="bottom|center"
+    android:layout_weight="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:paddingLeft="40dp"
+        android:layout_height="wrap_content"
+        android:text="Verify mobile"
+        android:paddingBottom="15dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="#444444"/>
+    <com.chaos.view.PinView
+        android:id="@+id/id_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:itemCount="6"
+        android:layout_margin="10dp"
+        android:itemBackground="#F4F6F9"
+        android:cursorVisible="true"
+        app:lineColor="#2196F3"
+        android:textColor="#1F1F1F"
+        android:inputType="number"
+        app:hideLineWhenFilled="true"
+        style="@style/PinWidget.PinView"
+        app:itemRadius="5dp"/>
+    <Button
+        android:id="@+id/verifyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:textAllCaps="false"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_margin="40dp"
+        android:textColor="#ffffff"
+        android:background="#6372FF"/>
+</LinearLayout>
+</LinearLayout>
